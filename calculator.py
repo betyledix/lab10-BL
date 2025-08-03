@@ -6,6 +6,22 @@ One function per operation, in order.
 """
 import math
 
+def square_root(a):
+    """Calculate the square root of a"""
+    try:
+        if a < 0:
+            raise ValueError("Cannot calculate square root of negative number")
+        return math.sqrt(a)
+    except TypeError:
+        raise ValueError("Input must be a number")
+
+def hypotenuse(a, b):
+    """Calculate the hypotenuse of a right triangle with sides a and b"""
+    try:
+        return math.hypot(a, b)
+    except TypeError:
+        raise ValueError("Inputs must be numbers")
+
 def add(a, b):
     return a + b
 
