@@ -1,3 +1,6 @@
+# https://github.com/betyledix/lab10-BL
+# Partner 1: Bety Ledix
+# Partner 2:
 import unittest
 from calculator import *
 
